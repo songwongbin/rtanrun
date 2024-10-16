@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const COIN_TYPE = [400, 375, 250, 175, 100]; // 코인 타입 별 생성 높이
+        let PREV_O_TYPE = 1;
+        let OBSTACLE_TYPE = 1;
+        function coinType() {
+            if (PREV_O_TYPE = 1) {
+                if (OBSTACLE_TYPE = 1) {
+                    return [COIN_TYPE[1], COIN_TYPE[1], COIN_TYPE[1], COIN_TYPE[1], COIN_TYPE[1], COIN_TYPE[1]];
+                } else if (OBSTACLE_TYPE = 2) {
+                    return [COIN_TYPE[1], COIN_TYPE[1], COIN_TYPE[1], COIN_TYPE[2], COIN_TYPE[3], COIN_TYPE[4]];
+                } else if (OBSTACLE_TYPE = 3) {
+                    return [COIN_TYPE[1], COIN_TYPE[1], COIN_TYPE[1], COIN_TYPE[1], COIN_TYPE[1], COIN_TYPE[2]];
+                }
+            }
+            if (PREV_O_TYPE = 2) {
+                if (OBSTACLE_TYPE = 1) {
+                    return [COIN_TYPE[5], COIN_TYPE[5], COIN_TYPE[5], COIN_TYPE[4], COIN_TYPE[3], COIN_TYPE[2]];
+                } else if (OBSTACLE_TYPE = 2) {
+                    return [COIN_TYPE[5], COIN_TYPE[5], COIN_TYPE[5], COIN_TYPE[5], COIN_TYPE[5], COIN_TYPE[5]];
+                } else if (OBSTACLE_TYPE = 3) {
+                    return [COIN_TYPE[5], COIN_TYPE[5], COIN_TYPE[5], COIN_TYPE[5], COIN_TYPE[5], COIN_TYPE[4]];
+                }
+            }
+            if (PREV_O_TYPE = 3) {
+                if (OBSTACLE_TYPE = 1) {
+                    return [COIN_TYPE[3], COIN_TYPE[3], COIN_TYPE[3], COIN_TYPE[3], COIN_TYPE[2], COIN_TYPE[1]];
+                } else if (OBSTACLE_TYPE = 2) {
+                    return [COIN_TYPE[3], COIN_TYPE[3], COIN_TYPE[3], COIN_TYPE[3], COIN_TYPE[4], COIN_TYPE[5]];
+                } else if (OBSTACLE_TYPE = 3) {
+                    return [COIN_TYPE[3], COIN_TYPE[3], COIN_TYPE[3], COIN_TYPE[3], COIN_TYPE[3], COIN_TYPE[3]];
+                }
+            }
+        }
+        console.log(coinType()[0])
+    </script>
+
+</body>
+
+</html>
